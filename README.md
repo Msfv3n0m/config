@@ -4,6 +4,5 @@
 - PowerToys
 ### Linux Only
 ### Cross-Platform
-- CherryTree
 - VSCode
 - Flameshot
