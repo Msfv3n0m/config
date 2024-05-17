@@ -1,2 +1,0 @@
-- Settings > Accessibility > Keyboard > toggle "Use the Print screen key to open Snipping Tool" option off
-- Restart flameshot
