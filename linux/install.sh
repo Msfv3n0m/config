@@ -7,7 +7,8 @@ rm code.deb
 ### Gear > Profiles > Import Profile
 # Flameshot
 ## Install
-sudo apt install flameshot -y 
+sudo apt install flameshot -y
+mkdir ~/.config/flameshot 
 ## Configure
 cp ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml  ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts-back.xml 
 cp flameshot/xfce4-keyboard-shortcuts.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
