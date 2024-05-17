@@ -9,7 +9,9 @@ winget install -e --id Microsoft.PowerToys --accept-source-agreements
 ## Configure
 ### General > Restore
 # Flameshot
+reg add "HKCU\Control Panel\Keyboard" /v PrintScreenKeyForSnippingEnabled /t REG_DWORD /d 0 /f
 ## Install
 winget install flameshot --accept-source-agreements
 ## Configure
+cp flameshot\flameshot.ini \users\$env:username\appdata\roaming\flameshot\flameshot.ini
 ### Configuration > General > Import 
