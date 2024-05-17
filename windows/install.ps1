@@ -15,3 +15,4 @@ winget install flameshot --accept-source-agreements
 ## Configure
 cp flameshot\flameshot.ini \users\$env:username\appdata\roaming\flameshot\flameshot.ini
 ### Configuration > General > Import 
+Write-Host -Foregroundcolor Yellow "Import configs for vscode and powertoys"

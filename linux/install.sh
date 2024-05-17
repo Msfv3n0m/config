@@ -13,3 +13,4 @@ cp ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml  ~/.c
 cp flameshot/xfce4-keyboard-shortcuts.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
 cp flameshot/flameshot.ini ~/.config/flameshot/flameshot.ini
 ### Configuration > General > Import 
+echo Import vscode configs
