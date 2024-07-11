@@ -29,10 +29,11 @@ set cursorline
 colorscheme Monokai
 highlight Search ctermbg=red ctermfg=white
 set shortmess-=S
-if &term =~ "xterm\\|rxvt"
+" if &term =~ "xterm\\|rxvt"
   let &t_SI = "\e[6 q"
   let &t_EI = "\e[3 q"
-endif
+  " autocmd VimLeave * silent !echo -ne "\033]112\007"
+" endif
 " Lifesavers
 nnoremap <C-r> :source ~/.vimrc<cr>
 nnoremap <C-x> :below terminal ++rows=10<cr>
