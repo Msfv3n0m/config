@@ -3,7 +3,8 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 # Install nvim
 choco install neovim -y
 # install nerdfont
-curl.exe https://webi.ms/nerdfont | powershell
+iwr  https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/0xProto.zip -outfile 0xProto.zip
+expand-archive 0xProto.zip
 # install ripgrep
 choco install ripgrep -y
 # install mingw
@@ -26,4 +27,4 @@ write-host "add this to path" -ForegroundColor yellow
 python -c "import sys; print(sys.exec_prefix)"
 sysdm.cpl
 ## configure nerdfont (Droid SANS Mono NF): https://medium.com/nerd-for-tech/neovim-but-its-in-windows-f39f181afaf9
-write-host "configure nerdfont (Droid SANS Mono NF): https://medium.com/nerd-for-tech/neovim-but-its-in-windows-f39f181afaf9" -ForegroundColor yellow
+write-host "install 0xProto font for all users and set as default https://medium.com/nerd-for-tech/neovim-but-its-in-windows-f39f181afaf9" -ForegroundColor yellow
