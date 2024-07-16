@@ -10,6 +10,8 @@ mv 0xProtoNerdFont-Regular.ttf ~/.local/share/fonts/
 rm -rf 0xProto*.ttf
 # install ripgrep
 sudo apt install ripgrep -y
+# install fd
+sudo apt install fd-find -y
 # install git 
 sudo apt install git -y
 # install nvchad
@@ -20,4 +22,7 @@ git clone https://github.com/NvChad/starter ~/.config/nvim
 pip install python-lsp-server pynvim
 # Copy custom configs
 cp lspconfig.lua ~/.config/nvim/lua/configs
-cp init.lua ~/.config/nvim/lua/plugins
+cp plugins/init.lua ~/.config/nvim/lua/plugins
+cp init.lua ~/.config/nvim/lua/
+
+cp mappings.lua ~/.config/nvim/lua

@@ -3,10 +3,12 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 # Install nvim
 choco install neovim -y
 # install nerdfont
-iwr  https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/0xProto.zip -outfile 0xProto.zip
+iwr https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/0xProto.zip -outfile 0xProto.zip
 expand-archive 0xProto.zip
 # install ripgrep
 choco install ripgrep -y
+# install fd
+choco install fd -y
 # install mingw
 choco install mingw -y
 # install gnuwin32
@@ -21,7 +23,10 @@ git clone https://github.com/NvChad/starter $ENV:USERPROFILE/AppData/Local/nvim
 pip install python-lsp-server pynvim
 # Copy custom configs
 cp lspconfig.lua $ENV:USERPROFILE\AppData\Local\nvim\lua\configs
-cp init.lua $ENV:USERPROFILE\AppData\Local\nvim\lua\plugins
+cp plugins\init.lua $ENV:USERPROFILE\AppData\Local\nvim\lua\plugins
+cp mappings.lua $ENV:USERPROFILE\AppData\Local\nvim\lua
+cp init.lua $ENV:USERPROFILE\AppData\Local\nvim\lua
+
 # Additional configuration
 write-host "add this to path" -ForegroundColor yellow
 python -c "import sys; print(sys.exec_prefix)"
