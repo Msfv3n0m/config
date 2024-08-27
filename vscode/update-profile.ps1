@@ -1,0 +1,1 @@
+Invoke-WebRequest https://raw.githubusercontent.com/Msfv3n0m/config/main/vscode/profile.code-profile -OutFile profile.code-profile    
