@@ -1,0 +1,1 @@
+wget https://raw.githubusercontent.com/Msfv3n0m/config/main/vscode/profile.code-profile
