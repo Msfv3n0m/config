@@ -2,7 +2,7 @@ wget https://vscode.download.prss.microsoft.com/dbazure/download/stable/fee1edb8
 sudo dpkg -i code_1.92.2-1723660989_amd64.deb
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install --all
-sudo apt install xclip bat ripgrep -y
+sudo apt install xclip bacula-console-qt ripgrep -y
 mkdir -p ~/.local/bin
 ln -s /usr/bin/batcat ~/.local/bin/bat
 wget https://download-cdn.jetbrains.com/fonts/JetBrainsMono-2.304.zip
