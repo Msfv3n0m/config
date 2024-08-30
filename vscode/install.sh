@@ -5,10 +5,6 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 sudo apt install xclip bacula-console-qt ripgrep -y
 mkdir -p ~/.local/bin
 ln -s /usr/bin/batcat ~/.local/bin/bat
-wget https://download-cdn.jetbrains.com/fonts/JetBrainsMono-2.304.zip
-unzip JetBrainsMono-2.304.zip
-sudo cp fonts/ttf/JetBrainsMono-Regular.ttf /usr/share/fonts/
-fc-cache -f
 echo export PATH="/home/$USER/.local/bin:$PATH" | tee -a ~/*rc
 chsh -s /bin/bash
 sudo pkill -KILL -u $USER
