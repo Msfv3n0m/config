@@ -1,0 +1,32 @@
+;; This Kanata config does the following:
+;; 1. Uses QWERTY as the default keyboard
+;; 2. creates an arrow layer to make movement more vim-like 
+(defvar
+  tap-time  200
+  hold-time 200
+)
+
+(defsrc
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  caps a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lmet lalt           spc            ralt rmet rctl
+)
+
+(deflayer qwerty
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  caps a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lmet lalt           (tap-hold $tap-time $hold-time spc (layer-while-held movement))
+            ralt rmet rctl
+)
+
+(deflayer movement
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    end    r    t    y    u    i    o    p    [    ]    \
+  caps home    s    d    f    g    left    down    up    right    ;    '    ret
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lmet lalt             _            ralt rmet rctl
+)
