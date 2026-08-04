@@ -1,0 +1,11 @@
+[Unit]
+Description=Kanata
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/kanata/... --cfg /usr/bin/kanata/kanata.kbd
+Restart=always
+
+[Install]
+WantedBy=multi-user.target   
